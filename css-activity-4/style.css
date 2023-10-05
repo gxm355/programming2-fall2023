@@ -1,0 +1,46 @@
+body {
+  max-width: 600px;
+  margin: 5 auto;
+}
+
+.one {
+  background: pink;
+  border: 3px solid blue;
+  /* CHANGE ME */
+  padding: 32px;
+  margin: 12px;
+}
+
+.two {
+  background: lightblue;
+  border: 3px solid purple;
+  /* CHANGE ME */
+  margin-bottom: 48px;
+}
+
+.three {
+  background: peachpuff;
+  border: 3px solid brown;
+  width: 200px;
+  /* CHANGE ME */
+  padding: 32px;
+  margin-left: 320px;
+}
+.four {
+  background: hotpink;
+  border: 5px solid rebeccapurple;
+  /* CHANGE ME */
+  padding: 50px;
+  width: 150px;
+  margin-left: 30px;
+  margin-top: 50px;
+}
+.five {
+  background: darkolivegreen;
+  border: 10px dashed green;
+  /* CHANGE ME */
+  margin-top: 50px;
+  margin-left: 320px;
+  padding: 50px;
+  width: 250px;
+}

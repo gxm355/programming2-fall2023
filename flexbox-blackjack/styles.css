@@ -1,0 +1,101 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #0a0a0a; 
+    color: #fff; 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #1a1a1a; 
+    color: #d4af37;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 28px;
+    border-bottom: 3px solid #d4af37;
+}
+
+.game {
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+    min-height: 80vh; 
+    padding: 20px;
+}
+
+.hand {
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid #d4af37; 
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    background-color: #292929; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); 
+}
+
+.hand h2 {
+    margin-bottom: 10px;
+    color: #d4af37;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.card {
+    width: 100px;
+    height: 140px;
+    background-color: #fff;
+    background-size: cover;
+    border: 1px solid #333;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #333;
+}
+
+.score {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #d4af37;
+}
+
+.message {
+    text-align: center;
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #333;
+    border: 1px solid #d4af37; 
+    color: #d4af37; 
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #d4af37; 
+    color: #0a0a0a; 
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #c5a035; 
+}

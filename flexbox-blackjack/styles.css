@@ -32,7 +32,7 @@ header {
     padding: 20px;
     margin: 10px;
     background-color: #292929; 
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); 
+    box-shadow: 0 8px 16px black; 
 }
 
 .hand h2 {
@@ -54,7 +54,7 @@ header {
     background-size: cover;
     border: 1px solid #333;
     border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 2px 4px black;
     display: flex;
     justify-content: center;
     align-items: center;

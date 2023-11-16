@@ -7,19 +7,19 @@ function convert() {
     const favoriteFood = document.getElementById('food').value;
 
 
- if (favoriteFood === "pizza") {
+ if (favoriteFood == "pizza") {
         name = name += "Cheesy";
-    } else if (favoriteFood === "sushi") {
+    } else if (favoriteFood == "sushi") {
         name = name += "Fishy";
-    } else if (favoriteFood === "hamburger") {
+    } else if (favoriteFood == "hamburger") {
         name = name += "Fatty";
-    } else if (favoriteFood === "pasta") {
+    } else if (favoriteFood == "pasta") {
         name = name += "Wimpy";
-    } else if (favoriteFood === "other") {
+    } else if (favoriteFood == "other") {
         name = name += "Stinky";
     } 
 
-    if (age >= 0 && age < 20) {
+    if (age >= 0 && age < 20 || age<=0) {
         name += "Flat";
     } else if (age >= 20 && age < 60) {
         name += "Bat";
@@ -28,35 +28,28 @@ function convert() {
     }
 
     
-    if (birthMonth === "january") {
+    if (birthMonth == "january") {
         name += "Cat";
-    } else if (birthMonth === "february") {
+    } else if (birthMonth == "february") {
         name += "Rat";
-    } else if (birthMonth === "march") {
+    } else if (birthMonth == "march") {
         name += "Hat";
-    } else if (birthMonth === "april") {
+    } else if (birthMonth == "april") {
         name += "Gnat";
-    } else if (birthMonth === "may") {
+    } else if (birthMonth == "may") {
         name += "Scat";
-    } else if (birthMonth === "june") {
+    } else if (birthMonth == "june") {
         name += "Muskrat";
-    } else if (birthMonth === "july") {
+    } else if (birthMonth == "july") {
         name += "Wildcat";
-    } else if (birthMonth === "august") {
+    } else if (birthMonth == "august") {
         name += "Spat";
-    } else if (birthMonth === "september") {
+    } else if (birthMonth == "september") {
         name += "Slat";
-    } else if (birthMonth === "october") {
+    } else if (birthMonth == "october" || birthMonth == "november" || birthMonth == "december") {
         name += "Gat";
-    } else if (birthMonth === "november") {
-        name += "AlleyCat";
-    } else if (birthMonth === "december") {
-        name += "FruitBat";
-    } 
+}
 
-
-
-    // Display the result
     document.getElementById('converted-result').innerText = "Your superhero name is: " + name;
 }
 

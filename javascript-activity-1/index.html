@@ -9,12 +9,22 @@
     </head>
     <body>
      
-     <p>Enter a dollar value: <span id="money">_________</span> USD </p>
-     <p> You have <span id="eur">________</span> EUR</p>
-     <p> You have <span id="gbp">________</span> GBP</p>
-     <p> You have <span id="cad">________</span> CAD</p>
-     <p> You have <span id="chf">________</span> CHF</p>
-     <p> You have <span id="jpy">________</span> JPY</p>
+     <!-- <p>Enter a dollar value: <span id="money">_________</span> USD </p> -->
+     <input type="number" placeholder="Enter amount in USD" id="currency-amount">
+
+     <select id="currencies">
+        <label>Choose a currency:</label>
+        <option value="">Select a currency </option>
+         <option value="eur"> EUR </option>
+         <option value="gbp"> GBP </option>
+         <option value="cad"> CAD </option>
+         <option value="chf"> CHF </option>
+         <option value="jpy"> JPY </option>
+    </select>
+
+<button onclick="convert()">Submit</button>
+
+    <div id="converted-result"></div>
 
 
         <script type="text/Javascript" src="script.js"></script>    

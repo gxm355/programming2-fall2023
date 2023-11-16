@@ -7,6 +7,18 @@ function convert() {
     const favoriteFood = document.getElementById('food').value;
 
 
+ if (favoriteFood === "pizza") {
+        name = name += "Cheesy";
+    } else if (favoriteFood === "sushi") {
+        name = name += "Fishy";
+    } else if (favoriteFood === "hamburger") {
+        name = name += "Fatty";
+    } else if (favoriteFood === "pasta") {
+        name = name += "Wimpy";
+    } else if (favoriteFood === "other") {
+        name = name += "Stinky";
+    } 
+
     if (age >= 0 && age < 20) {
         name += "Flat";
     } else if (age >= 20 && age < 60) {
@@ -43,17 +55,6 @@ function convert() {
     } 
 
 
-    if (favoriteFood === "pizza") {
-        name = "Cheesy" + name;
-    } else if (favoriteFood === "sushi") {
-        name = "Fishy" + name;
-    } else if (favoriteFood === "hamburger") {
-        name = "Fatty" + name;
-    } else if (favoriteFood === "pasta") {
-        name = "Wimpy" + name;
-    } else if (favoriteFood === "other") {
-        name = "Stinky" + name;
-    } 
 
     // Display the result
     document.getElementById('converted-result').innerText = "Your superhero name is: " + name;

@@ -11,12 +11,20 @@
         <h1>Krish's Blackjack Website</h1>
     </header>
 
+    <!-- Scoreboard for games won -->
+    <div class="scoreboard">
+        <div>Dealer Games Won: <span id="dealer-games-won">0</span></div>
+        <div>Player Games Won: <span id="user-games-won">0</span></div>
+    </div>
+
     <main class="game">
         <div class="hand">
             <h2>Dealer</h2>
             <div class="cards">
-                <img id="dealerCard1" src="images/blank.svg">
-                <img id="dealerCard2" src="images/blank.svg">
+                <img class="card" id="dealerCard1" src="images/blank.svg">
+                <img class="card" id="dealerCard2" src="images/blank.svg">
+                <img class="card" id="dealerCard3" src="images/blank.svg">
+                <img class="card" id="dealerCard4" src="images/blank.svg">
             </div>
             <div class="score">Score: <span id="dealerScore" class="score-value">0</span></div>
         </div>
@@ -24,9 +32,10 @@
         <div class="hand">
             <h2>Player</h2>
             <div class="cards">
-                <img id="userCard1" src="images/blank.svg">
-                <img id="userCard2" src="images/blank.svg">
-
+                <img class="card" id="userCard1" src="images/blank.svg">
+                <img class="card" id="userCard2" src="images/blank.svg">
+                <img class="card" id="userCard3" src="images/blank.svg">
+                <img class="card" id="userCard4" src="images/blank.svg">
             </div>
             <div class="score" >Score: <span id="userScore" class="score-value">0</span></div>
         </div>
@@ -36,16 +45,12 @@
         Your Turn!
     </div>
 
-    <!-- Add in counts for dealer and users games won -->
-
-
-
     <div class="actions">
-        <button class="hit" onclick="hit()" disabled="true" id="hitButton">Hit</button>
-        <button class="stand" onclick="stand()" disabled="true" id="standButton">Stand</button>
+        <button class="hit" onclick="hit()" disabled="true" id="hit">Hit</button>
+        <button class="stand" onclick="stand()" disabled="true" id="stand">Stand</button>
         <button class="reset" onclick="reset()" id="reset">Reset</button>
     </div>
 
-    <script type="text/Javascript" src="script.js"></script>
+    <script type="text/javascript" src="script.js"></script>
 </body>
 </html>

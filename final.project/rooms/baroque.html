@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Baroque - Kanika Malhotra Art Gallery</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <h1>Baroque - Kanika Malhotra Art Gallery</h1>
+        </header>
+        <!-- by making each painting a modal, I could use the JS functionality to reveal descriptions -->
+        <div class="painting-grid">
+            <!-- Painting 1 -->
+            <div class="painting">
+                <a href="#modal1">
+                    <img src="images/baroque2.jpg" alt="Painting Title 1">
+                    <p>Black Lace</p>
+                </a>
+                <div id="modal1" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <img src="images/baroque2.jpg" alt="Painting Title 1">
+                        <p>Though Picasso has many famous works, such as 'Guernica,' some of his earlier works are often neglected. Kanika wanted to celebrate some of the lesser known paintings by basing this portrait off of Madame Canals.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Painting 2 -->
+            <div class="painting">
+                <a href="#modal2">
+                    <img src="images/baroque1.jpg" alt="Painting Title 2">
+                    <p>Girl with the Piercing Eyes</p>
+                </a>
+                <div id="modal2" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <img src="images/baroque1.jpg" alt="Painting Title 2">
+                        <p>Kanika had never seen a painting that struck her quite like this one. The original portait by Johannes Vermeer captured the emotion of this woman in a painting that she had never seen before. With the goal or recreating this and elevating the work in her own style, Kanika decided to reimagine the portrait in her own eyes.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Painting 3 -->
+            <div class="painting">
+                <a href="#modal3">
+                    <img src="images/baroque3.jpg" alt="Painting Title 3">
+                    <p>Girl Power</p>
+                </a>
+                <div id="modal3" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <img src="images/baroque3.jpg" alt="Painting Title 3">
+                        <p>An original work by Kanika, the artist decided to highlight the power of Indian American women in the US through bright colors, and a very dominant yet confident woman. The piece is a culmination of the skills Kanika has honed through previous portraits, and represents her shift to more activist works.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer>
+            <p>2024 Kanika Malhotra Art Gallery</p>
+        </footer>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>

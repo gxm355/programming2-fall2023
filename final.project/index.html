@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanika Malhotra Art Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Homepage -->
+    <header>
+        <h1>Kanika Malhotra's Virtual Art Gallery</h1>
+    </header>
+    <!-- Room Pages -->
+    <div class="rooms-container">
+        <div class="room" id="room1">
+            <h2>Room 1: Impressionism</h2>
+            <a href="rooms/impressionism.html">
+            <img src="images/impressionist1.jpg" alt="Impressionism Room" class="room-thumbnail" width="450" height="450">
+            </a>
+        </div>
+        <div class="room" id="room2">
+            <h2>Room 2: Baroque</h2>
+            <a href="rooms/baroque.html">
+            <img src="images/baroque1.jpg" alt="Baroque Room" class="room-thumbnail" width="450" height="450">
+            </a>
+        </div>
+        <div class="room" id="room3">
+            <h2>Room 3: Cubism</h2>
+            <a href="rooms/cubism.html">
+            <img src="images/cubism1.jpg" alt="Cubism Room" class="room-thumbnail" width="450" height="450">
+            </a>
+        </div>
+    </div>
+    <!-- Artist Bio Page -->
+    <div id="artist-bio">
+        <h2>About Kanika Malhotra</h2>
+        <p>Kanika Malhotra is a very prolific artist based out of Chicago, Illinois. Since she was young, she has always had a passion for depicting her thoughts in the form of painting. Growing up in India, she admired the ornate details of Ancient Indian Art and natural illustrations, along with looking up to many distinguished European artists. Malhotra's artist style takes elements from numerous European styles of art, from Cubism to Renaissance era Impressionism, and fuses it with Indian styling to create a unique art identity. </p>
+    </div>
+    <!-- Contact Page -->
+    <title>Contact Form</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('YReS2a9qmhwpkG6e9');
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('contact_service', 'contact_form', this)
+                    .then(function() {
+                        console.log('SUCCESS!');
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
+    </head>
+    <body>
+        <form id="contact-form">
+            <input type="hidden" name="contact_number">
+            <label>Name</label>
+            <input type="text" name="user_name">
+            <label>Email</label>
+            <input type="email" name="user_email">
+            <label>Message</label>
+            <textarea name="message"></textarea>
+            <input type="submit" value="Send">
+        </form>
+        <!-- Wanted to create some spacing so footer didn't overlap, struggled doing this in CSS -->
+        <p><br></p>
+        <p><br></p>
+        <!-- Footer -->
+        <footer>
+            <p>2024 Kanika Malhotra Art Gallery</p>
+        </footer>
+        <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

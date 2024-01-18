@@ -104,7 +104,7 @@ function stand() {
     dealerScoreElement.innerText = dealerScore;
 
     function dealerDraws() {
-        while (dealerScore < 17) {
+        while (dealerScore < 17 && dealerCards.length<4) {
             let dealerNewCard = drawCard(cardDeck);
             dealerCards.push(dealerNewCard);
             dealerScore += cardScoreValues[dealerNewCard];

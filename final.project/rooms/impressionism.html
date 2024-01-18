@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Impressionism - Kanika Malhotra Art Gallery</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <h1>Impressionism - Kanika Malhotra Art Gallery</h1>
+        </header>
+        <!-- by making each painting a modal, I could use the JS functionality to reveal descriptions -->
+        <div class="painting-grid">
+            <!-- Painting 1 -->
+            <div class="painting">
+                <a href="#modal1">
+                    <img src="images/impressionist1.jpg" alt="Painting Title 1">
+                    <p>Sorrento Girl</p>
+                </a>
+                <div id="modal1" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <img src="images/impressionist1.jpg" alt="Painting Title 1">
+                        <p>This painting is based off of the work of Jean Singer Sargent, an American artist from the mid 1800s that painted figures from across Europe. Inspired by his work, Kanika decided to emulate one of his portraits, adding her own cultural elements to it.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Painting 2 -->
+            <div class="painting">
+                <a href="#modal2">
+                    <img src="images/impressionist2.jpg" alt="Painting Title 2">
+                    <p>Teha'amana</p>
+                </a>
+                <div id="modal2" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <img src="images/impressionist2.jpg" alt="Painting Title 2">
+                        <p>Paul Gauguin is a very notable (yet controversial) painter from the 1840s. His work stretched to many across French Polynesia, something that intrigued Kanika and drove her to recreate one of his portraits.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Painting 3 -->
+            <div class="painting">
+                <a href="#modal3">
+                    <img src="images/impressionist3.jpg" alt="Painting Title 3">
+                    <p>Saffron Drums</p>
+                </a>
+                <div id="modal3" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <img src="images/impressionist3.jpg" alt="Painting Title 3">
+                        <p>Noticing the fine brushstrokes and use of Indian design in Deepa Vedpathaks work, Kanika wanted to create an impressionist painting to reflect her traditions, and create piece of work that brings a sense of playfulness to the observer.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer>
+            <p>2024 Kanika Malhotra Art Gallery</p>
+        </footer>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>

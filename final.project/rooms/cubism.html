@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cubism - Kanika Malhotra Art Gallery</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <h1>Cubism - Kanika Malhotra Art Gallery</h1>
+        </header>
+        <!-- by making each painting a modal, I could use the JS functionality to reveal descriptions -->
+        <div class="painting-grid">
+            <!-- Painting 1 -->
+            <div class="painting">
+                <a href="#modal1">
+                    <img src="images/cubism3.jpg" alt="Painting Title 1">
+                    <p>The Yielded Mandolin</p>
+                </a>
+                <div id="modal1" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <img src="images/cubism3.jpg" alt="Painting Title 1">
+                        <p>Fascinated by the Picasso piece she had previously painted, Kanika decided to try her hand at Cubism to create fascinating and complex imagery. Here a woman holding a mandolin is depicted, and this piece was part of a two piece series by Kanika.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Painting 2 -->
+            <div class="painting">
+                <a href="#modal2">
+                    <img src="images/cubism2.jpg" alt="Painting Title 2">
+                    <p>Noble Steed</p>
+                </a>
+                <div id="modal2" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <img src="images/cubism2.jpg" alt="Painting Title 2">
+                        <p>The centerpiece between the two other portraits, this painting displays an agitated horse in battle, a note to the grand historical context behind many of Kanika's paintings. The original piece is not by Picasso though, it is by an Indian artist named MF Hussain, a man who many know as the 'modern Cubist.'</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Painting 3 -->
+            <div class="painting">
+                <a href="#modal3">
+                    <img src="images/cubism1.jpg" alt="Painting Title 3">
+                    <p>Uhde Stoicism</p>
+                </a>
+                <div id="modal3" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <img src="images/cubism1.jpg" alt="Painting Title 3">
+                        <p>The sequel to Kanika's painting of 'The Yielded Mandolin,' this portait is meant to depict a man from the early 1910s in England. Kanika particularly enjoyed the creative freedom of Cubism, specifically the ability to leave some interpretation up to the observer.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer>
+            <p>2024 Kanika Malhotra Art Gallery</p>
+        </footer>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>

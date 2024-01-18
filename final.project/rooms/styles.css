@@ -1,0 +1,177 @@
+body {
+    font-family: 'Papyrus', fantasy;
+    color: #333;
+    background-color: #7A8B6B;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #37492F;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    border: double 10px black;
+}
+
+
+
+footer {
+    background-color: #37492F; 
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.rooms-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.room {
+    width: 30%;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+/*    Adjusts speed of the hovering motion*/
+    transition: transform 0.275s ease-in-out;
+}
+
+/*Learned this online, just a fun thing that makes each room box move when hovered over*/
+.room:hover {
+    transform: translateY(-10px);
+}
+
+.room h2 {
+    background-color: #856565; 
+    color: white;
+    margin: 0;
+    padding: 10px;
+}
+
+.room-thumbnail {
+    width: 100%;
+    height: auto;
+    border-bottom: 6px solid #5F8575; 
+}
+
+#artist-bio {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: justify;
+    color: black;
+    border: solid 1px white;
+}
+
+#contact {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: justify;
+    color: white;
+}
+
+
+@media (max-width: 768px) {
+    .rooms-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .room {
+        width: 80%;
+    }
+}
+
+
+.painting-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.painting {
+    text-align: center;
+}
+
+.painting img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+    height: 450px;
+}
+
+.painting img:hover {
+    transform: scale(1.05);
+}
+
+.painting p {
+    margin-top: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*This is to make it flexible to changing window sizes, got numbers from online*/
+@media (max-width: 768px) {
+    .painting-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .modal-content {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .painting-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
